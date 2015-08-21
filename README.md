@@ -40,3 +40,8 @@ $('<div class="color-0 test-class color-1 other-color-3 color2 new-color"></div>
 >> Object { 0: <div.test-class>, 1: <div.test-class>, length: 2 }
 
 ```
+
+
+# Credit
+
+This plugin was inspired by this answer in StackOverflow: http://stackoverflow.com/questions/2644299/jquery-removeclass-wildcard#answer-5182103
