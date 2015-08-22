@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>jQuery - Remove partial class</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.removepartialclass.js"></script>
+    <script src="js/example.js"></script>
+    <link rel="stylesheet" media="all" href="css/core.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <fieldset>
+        <legend>Add new classes</legend>
+        <input id="js-input-new" type="text" placeholder="Add new class" /> <button id="js-btn-add">Add classes</button>
+      </fieldset>
+
+      <div id="target" class="color-0 test-class color-1 other-color-3 color2 new-color">
+        I'm the div target and <span id="js-output"></span>
+        <ul id="js-list-classes">
+        </ul>
+      </div>
+
+      <fieldset>
+        <legend>Remove partial class</legend>
+        <input id="js-input-partial" type="text" placeholder="For example: color-" /> <button id="js-btn-partial">Remove partial class</button>
+
+        <ul class="list-options">
+          <li>
+            <label><input class="js-option" value="begining" type="radio" name="position" checked="checked" />Begining</label>
+            <blockquote>To remove classes that have the partial class at the begining of their names</blockquote>
+          </li>
+          <li>
+            <label><input class="js-option" value="end" type="radio" name="position" />End</label>
+            <blockquote>To remove classes that have the partial class at the end of their names</blockquote>
+          </li>
+          <li>
+            <label><input class="js-option" value="middle" type="radio" name="position" />Middle</label>
+            <blockquote>To remove classes that have the partial class in their names between other characters</blockquote>
+          </li>
+          <li>
+            <label><input class="js-option" value="present" type="radio" name="position" />Present</label>
+            <blockquote>To remove classes that have the partial class in their names at any position</blockquote>
+          </li>
+        <ul>
+
+      </fieldset>
+    </div>
+  </body>
+</html>

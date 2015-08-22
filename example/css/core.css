@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: center;
+  font-family: Arial;
+}
+
+.wrapper {
+  width: 60%;
+  min-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid #555;
+  padding: 20px;
+}
+
+input, button {
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+#target {
+  padding: 20px;
+  margin: 20px 0;
+  background: #EEE;
+}
+
+.list-options {
+  list-style: none;
+}
+
+.list-options li {
+  padding-top: 10px;
+}
+
+label {
+  cursor: pointer;
+}

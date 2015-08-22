@@ -1,12 +1,22 @@
 /**
  * jQuery plugin to remove CSS classes that partially match a given string.
- * Original code and idea from http://stackoverflow.com/questions/2644299/jquery-removeclass-wildcard#answer-5182103
+ * Inspire by http://stackoverflow.com/questions/2644299/jquery-removeclass-wildcard#answer-5182103
  *
  * @author Copyright 2015 xanfran
  * @see http://stackoverflow.com/questions/2644299/jquery-removeclass-wildcard#answer-5182103
- * @version 0.1
+ * @version 0.2
  */
-(function($) {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+
+		// AMD. Register as an anonymous module.
+		define([ "jquery" ], factory );
+	} else {
+
+		// Browser globals
+		factory( jQuery );
+	}
+}(function($) {
 
 	/**
 	 * Removes a CSS class which name partially matches the given string.
@@ -49,4 +59,4 @@
 		return this;
 	};
 
-}(jQuery));
+}));
