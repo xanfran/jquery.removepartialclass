@@ -26,10 +26,10 @@
 	 * 		name. There are four different values:
 	 *			- end: the class name ends with the given subString.
 	 *			- middle: the class name has the given subString but it is not
-	 * 				at the begining or at the end.
+	 * 				at the beginning or at the end.
 	 *			- present: the class name contains the given subString in any
 	 * 				position.
-	 *			- begining: the class name startss with the given subString.
+	 *			- beginning: the class name starts with the given subString.
 	 * 				This is the default value and any other not-supported value
 	 * 				will behave as this one.
 	 */
@@ -39,7 +39,7 @@
 			return this;
 		}
 
-		var positionString = position || 'begining',
+		var positionString = position || 'beginning',
 			regExp;
 
 		if (positionString === 'end') {
